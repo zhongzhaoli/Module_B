@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jQuery/jquery-3.2.1.js"></script>
+    <script src="js/jssor.slider-22.2.16.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="game_board">
+    <div class="bg_div">
+        <img src="images/background-1.jpg" alt="">
+        <img src="images/background-1.jpg" alt="">
+    </div>
+    <div class="video_bg_div">
+        <video src="sound/star battle coming soon.mp4" onended="video_end()" autoplay></video>
+        <div class=ios_btn>
+            <img src="images/available-on-android.png" alt="">
+            <img src="images/available-on-ios-.png" alt="">
+        </div>
+    </div>
+    <div class="start_btn" style="display: none;">Start Game</div>
+    <div id="jssor_1"
+         style="z-index: 2;;position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('images/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides"
+             style="cursor:default;position:relative;top:0px;left:0px;width:960px;height:480px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/01_instructions.png"/>
+                <div data-u="thumb">
+                    <img class="i" src="images/01_instructions.png"/>
+                    <div class="t">Banner Rotator</div>
+                    <div class="c">360+ touch swipe slideshow effects</div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="images/01_game_board2.png"/>
+                <div data-u="thumb">
+                    <img class="i" src="images/01_game_board2.png"/>
+                    <div class="t">Image Gallery</div>
+                    <div class="c">Image gallery with thumbnail navigation</div>
+                </div>
+            </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">List Slider</a>
+            <div>
+                <img data-u="image" src="images/01_game_board.png"/>
+                <div data-u="thumb">
+                    <img class="i" src="images/01_game_board.png"/>
+                    <div class="t">Carousel</div>
+                    <div class="c">Touch swipe, mobile device optimized</div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="images/01_ranking2.png"/>
+                <div data-u="thumb">
+                    <img class="i" src="images/01_ranking2.png"/>
+                    <div class="t">Themes</div>
+                    <div class="c">30+ professional themems + growing</div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="images/01_ranking.png"/>
+                <div data-u="thumb">
+                    <img class="i" src="images/01_ranking.png"/>
+                    <div class="t">Tab Slider</div>
+                    <div class="c">Tab slider with auto play options</div>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;"
+              data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;"
+              data-autocenter="2"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+</div>
+</body>
+</html>
